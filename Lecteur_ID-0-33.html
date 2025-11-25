@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Smartbook - AudioBook</title>
+  <link rel="stylesheet" href="plyr.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <img src="ID-0-33-Couverture.jpg" alt="Couverture" style="width: 20%; height: auto; margin-bottom: 20px;">
+
+  <div class="logos">
+    <img src="PLANCHE-1a.jpg" alt="Logo AudioBook" style="width: 5%; height: auto; margin-bottom: 20px;">
+    <img src="Logo_resized.jpg" alt="Logo Encyclo-AI" style="width: 10%; height: auto; margin-bottom: 20px;">
+  </div>
+
+<!-- Bloc bouton Play + potentiomètre vitesse -->
+<div class="player-controls">
+  <!-- Gros bouton Play -->
+  <button id="bigPlayBtn" aria-label="Lire ou mettre en pause le livre audio">▶</button>
+
+  <!-- Bloc vitesse -->
+  <div id="speedControl">
+    <div class="speed-label">Vitesse</div>
+    <div class="speed-knob-wrapper">
+      <input type="range" id="speedKnob" min="0.9" max="1.1" step="0.05" value="1" orient="vertical">
+
+      <!-- Colonne repères alignés -->
+      <div id="speedLabels">
+        <span>++</span>
+        <span>+</span>
+        <span>=</span>
+        <span>-</span>
+        <span>--</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Lecteur audio -->
+  <audio id="audioPlayer" controls></audio>
+
+  <!-- Playlist -->
+  <ul id="playlist">
+    <li><a href="Introduction.mp3" style="font-weight: bold;">INTRODUCTION - ARTHUR RIMBAUD : UNE RÉVOLTE POÉTIQUE ET MODERNE</a></li>
+
+    <li style="font-weight: bold;">Chapitre 1 - ENFANCE ET ORIGINES : LE CONTEXTE FAMILIAL DE RIMBAUD</li>
+    <ul>
+      <li><a href="Chapitre1-1.mp3">1.1 - Les racines familiales et l'influence parentale</a></li>
+      <li><a href="Chapitre1-2.mp3">1.2 - L'enfance à Charleville : un environnement provincial</a></li>
+      <li><a href="Chapitre1-3.mp3">1.3 - Les premières influences éducatives et culturelles</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 2 - LA PRÉCOCITÉ LITTÉRAIRE : PREMIERS ÉCRITS ET INSPIRATIONS</li>
+    <ul>
+      <li><a href="Chapitre2-1.mp3">2.1 - Les premiers poèmes : une maturité précoce</a></li>
+      <li><a href="Chapitre2-2.mp3">2.2 - Les influences littéraires de l'époque</a></li>
+      <li><a href="Chapitre2-3.mp3">2.3 - L'émergence d'une voix unique</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 3 - LA RÉVOLTE DE L'ADOLESCENCE : RENCONTRES ET INFLUENCES</li>
+    <ul>
+      <li><a href="Chapitre3-1.mp3">3.1 - Les années de rébellion à Charleville</a></li>
+      <li><a href="Chapitre3-2.mp3">3.2 - Les rencontres littéraires déterminantes</a></li>
+      <li><a href="Chapitre3-3.mp3">3.3 - L'impact des événements politiques et sociaux</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 4 - RIMBAUD ET VERLAINE : UNE RELATION PASSIONNÉE</li>
+    <ul>
+      <li><a href="Chapitre4-1.mp3">4.1 - La rencontre et le début de leur collaboration</a></li>
+      <li><a href="Chapitre4-2.mp3">4.2 - Les tensions et les conflits</a></li>
+      <li><a href="Chapitre4-3.mp3">4.3 - L'impact sur leurs œuvres respectives</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 5 - ŒUVRES MAJEURES : ANALYSE DE 'LE DORMEUR DU VAL' ET 'UNE SAISON EN ENFER'</li>
+    <ul>
+      <li><a href="Chapitre5-1.mp3">5.1 - 'Le Dormeur du val' : une poésie de la guerre</a></li>
+      <li><a href="Chapitre5-2.mp3">5.2 - 'Une Saison en Enfer' : un récit introspectif</a></li>
+      <li><a href="Chapitre5-3.mp3">5.3 - L'importance de ces œuvres dans la littérature</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 6 - MODERNITÉ ET EXPÉRIMENTATION : LE STYLE POÉTIQUE DE RIMBAUD</li>
+    <ul>
+      <li><a href="Chapitre6-1.mp3">6.1 - L'innovation dans les formes et les thèmes</a></li>
+      <li><a href="Chapitre6-2.mp3">6.2 - L'utilisation des images et des symboles</a></li>
+      <li><a href="Chapitre6-3.mp3">6.3 - L'influence sur les mouvements littéraires ultérieurs</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 7 - LA FIN DE LA CARRIÈRE LITTÉRAIRE : ABANDON DE L'ÉCRITURE</li>
+    <ul>
+      <li><a href="Chapitre7-1.mp3">7.1 - Les raisons de l'abandon</a></li>
+      <li><a href="Chapitre7-2.mp3">7.2 - Les réactions contemporaines</a></li>
+      <li><a href="Chapitre7-3.mp3">7.3 - L'héritage laissé malgré tout</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 8 - EXIL ET QUÊTE IDENTITAIRE : LA DERNIÈRE PARTIE DE LA VIE DE RIMBAUD</li>
+    <ul>
+      <li><a href="Chapitre8-1.mp3">8.1 - Les voyages en Afrique et au Moyen-Orient</a></li>
+      <li><a href="Chapitre8-2.mp3">8.2 - Les défis et les réalisations</a></li>
+      <li><a href="Chapitre8-3.mp3">8.3 - La fin de sa vie et son héritage</a></li>
+    </ul>
+
+    <li><a href="Conclusion.mp3" style="font-weight: bold;">CONCLUSION - L'HÉRITAGE INTEMPOREL DE RIMBAUD</a></li>
+  </ul>
+
+  <p><a href="ID-0-33-Annexes.pdf" target="_blank">📄 Consulter les annexes du livre</a></p>
+  <p><a href="mentions_legales.pdf">Mentions légales</a></p>
+
+  <script src="plyr.polyfilled.js"></script>
+  <script src="lecteur.js"></script>
+</body>
+</html>
